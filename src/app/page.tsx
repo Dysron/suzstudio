@@ -85,10 +85,10 @@ export default function Home() {
               {/* Tagline */}
               <div className="absolute bottom-8 right-8 lg:bottom-12 lg:right-16 text-right">
                 <HeroText delay={0.6}>
-                  <p className="text-background/90 text-lg lg:text-xl tracking-wide uppercase drop-shadow-md">
+                  <p className="text-white text-lg lg:text-xl tracking-wide uppercase font-medium" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>
                     Videography and
                   </p>
-                  <p className="text-background/90 text-lg lg:text-xl tracking-wide uppercase drop-shadow-md">
+                  <p className="text-white text-lg lg:text-xl tracking-wide uppercase font-medium" style={{ textShadow: '2px 2px 8px rgba(0,0,0,0.8), 0 0 20px rgba(0,0,0,0.5)' }}>
                     Live Content Capture
                   </p>
                 </HeroText>
@@ -171,7 +171,7 @@ export default function Home() {
       <section className="py-12 lg:py-20 px-6 lg:px-12">
         <div className="max-w-7xl mx-auto">
           <FadeInUp>
-            <h2 className="heading-display text-3xl lg:text-4xl text-center mb-12">
+            <h2 className="heading-display text-3xl lg:text-4xl text-center mb-12 text-foreground">
               BLAQ PAGES / AFRO HOUSE DJ SET / LOS ANGELES
             </h2>
           </FadeInUp>
@@ -199,7 +199,7 @@ export default function Home() {
           </StaggerContainer>
 
           <FadeInUp delay={0.3}>
-            <h3 className="heading-display text-3xl lg:text-4xl text-center mt-16 mb-12">
+            <h3 className="heading-display text-3xl lg:text-4xl text-center mt-16 mb-12 text-foreground">
               EVENTS / NIGHTLIFE IN DC
             </h3>
           </FadeInUp>

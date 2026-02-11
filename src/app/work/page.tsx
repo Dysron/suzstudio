@@ -76,7 +76,7 @@ export default function WorkPage() {
           <div className="max-w-7xl mx-auto">
             <FadeInUp delay={categoryIndex * 0.1}>
               <HeroText delay={0.1}>
-                <h2 className="heading-display text-2xl lg:text-4xl text-center mb-12">
+                <h2 className="heading-display text-2xl lg:text-4xl text-center mb-12 text-foreground">
                   {category.title}
                 </h2>
               </HeroText>

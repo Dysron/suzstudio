@@ -16,8 +16,8 @@
   --muted: #A29587;
   --muted-foreground: #6B5D50;
 
-  --card: #A29587;
-  --card-foreground: #FDE7CF;
+  --card: #3D4F5F;
+  --card-foreground: #FFFFFF;
 
   --border: rgba(48, 66, 84, 0.15);
   --overlay: rgba(48, 66, 84, 0.8);
@@ -85,10 +85,14 @@ a {
 /* Image hover effects */
 .image-container {
   overflow: hidden;
+  position: relative;
 }
 
 .image-container img {
   transition: transform 0.6s ease-out;
+  object-fit: cover !important;
+  width: 100% !important;
+  height: 100% !important;
 }
 
 .image-container:hover img {
