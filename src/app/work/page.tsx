@@ -89,12 +89,14 @@ export default function WorkPage() {
               {category.images.map((image, i) => (
                 <StaggerItem key={i}>
                   <ImageReveal direction="up" delay={i * 0.1}>
-                    <div className="image-container aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group cursor-pointer">
+                    <div className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group cursor-pointer">
                       <Image
                         src={image.src}
                         alt={image.alt}
                         fill
-                        className="object-cover group-hover:scale-110 transition-transform duration-700 ease-out"
+                        sizes="(max-width: 768px) 100vw, 33vw"
+                        style={{ objectFit: 'cover' }}
+                        className="group-hover:scale-110 transition-transform duration-700 ease-out"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">

@@ -184,12 +184,14 @@ export default function Home() {
             ].map((image, i) => (
               <StaggerItem key={i}>
                 <ImageReveal direction="up" delay={i * 0.1}>
-                  <div className="image-container aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group">
+                  <div className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group">
                     <Image
                       src={image.src}
                       alt={image.alt}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      style={{ objectFit: 'cover' }}
+                      className="group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
                   </div>
@@ -212,12 +214,14 @@ export default function Home() {
             ].map((image, i) => (
               <StaggerItem key={i}>
                 <ImageReveal direction="up" delay={i * 0.1}>
-                  <div className="image-container aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group">
+                  <div className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group">
                     <Image
                       src={image.src}
                       alt={image.alt}
                       fill
-                      className="object-cover group-hover:scale-110 transition-transform duration-700"
+                      sizes="(max-width: 768px) 100vw, 33vw"
+                      style={{ objectFit: 'cover' }}
+                      className="group-hover:scale-110 transition-transform duration-700"
                     />
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
                   </div>
