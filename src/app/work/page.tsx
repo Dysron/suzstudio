@@ -94,7 +94,7 @@ export default function WorkPage() {
                         src={image.src}
                         alt={image.alt}
                         fill
-                        sizes="(max-width: 768px) 100vw, 33vw"
+                        unoptimized
                         style={{ objectFit: 'cover' }}
                         className="group-hover:scale-110 transition-transform duration-700 ease-out"
                       />
