@@ -65,20 +65,20 @@ export default function Home() {
               </div>
 
               {/* Text Overlay */}
-              <div className="absolute inset-0 flex items-center">
+              <div className="absolute inset-0 flex flex-col justify-between py-8 lg:py-12">
                 <div className="w-full px-8 lg:px-16">
-                  <div className="flex justify-between items-center">
-                    <HeroText delay={0.2}>
-                      <h1 className="heading-display text-5xl md:text-7xl lg:text-9xl text-background drop-shadow-lg">
-                        SUZZY
-                      </h1>
-                    </HeroText>
-                    <HeroText delay={0.4}>
-                      <h1 className="heading-display text-5xl md:text-7xl lg:text-9xl text-background drop-shadow-lg">
-                        NDIFORCHU
-                      </h1>
-                    </HeroText>
-                  </div>
+                  <HeroText delay={0.2}>
+                    <h1 className="heading-display text-5xl md:text-7xl lg:text-9xl text-background drop-shadow-lg">
+                      SUZZY
+                    </h1>
+                  </HeroText>
+                </div>
+                <div className="w-full px-8 lg:px-16 text-right">
+                  <HeroText delay={0.4}>
+                    <h1 className="heading-display text-5xl md:text-7xl lg:text-9xl text-background drop-shadow-lg">
+                      NDIFORCHU
+                    </h1>
+                  </HeroText>
                 </div>
               </div>
 
