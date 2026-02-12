@@ -89,15 +89,17 @@ export default function WorkPage() {
               {category.images.map((image, i) => (
                 <StaggerItem key={i}>
                   <ImageReveal direction="up" delay={i * 0.1}>
-                    <div className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group cursor-pointer">
-                      <Image
-                        src={image.src}
-                        alt={image.alt}
-                        fill
-                        unoptimized
-                        style={{ objectFit: 'cover' }}
-                        className="group-hover:scale-110 transition-transform duration-700 ease-out"
-                      />
+                    <div
+                      className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group cursor-pointer"
+                      role="img"
+                      aria-label={image.alt}
+                      style={{
+                        backgroundImage: `url(${image.src})`,
+                        backgroundSize: 'cover',
+                        backgroundPosition: 'center',
+                        backgroundRepeat: 'no-repeat',
+                      }}
+                    >
                       <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                       <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
                         <p className="text-white text-sm uppercase tracking-widest text-center">

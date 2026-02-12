@@ -184,15 +184,17 @@ export default function Home() {
             ].map((image, i) => (
               <StaggerItem key={i}>
                 <ImageReveal direction="up" delay={i * 0.1}>
-                  <div className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      unoptimized
-                      style={{ objectFit: 'cover' }}
-                      className="group-hover:scale-110 transition-transform duration-700"
-                    />
+                  <div
+                    className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group"
+                    role="img"
+                    aria-label={image.alt}
+                    style={{
+                      backgroundImage: `url(${image.src})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  >
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
                   </div>
                 </ImageReveal>
@@ -214,15 +216,17 @@ export default function Home() {
             ].map((image, i) => (
               <StaggerItem key={i}>
                 <ImageReveal direction="up" delay={i * 0.1}>
-                  <div className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group">
-                    <Image
-                      src={image.src}
-                      alt={image.alt}
-                      fill
-                      unoptimized
-                      style={{ objectFit: 'cover' }}
-                      className="group-hover:scale-110 transition-transform duration-700"
-                    />
+                  <div
+                    className="aspect-[3/4] relative rounded-xl overflow-hidden bg-muted group"
+                    role="img"
+                    aria-label={image.alt}
+                    style={{
+                      backgroundImage: `url(${image.src})`,
+                      backgroundSize: 'cover',
+                      backgroundPosition: 'center',
+                      backgroundRepeat: 'no-repeat',
+                    }}
+                  >
                     <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-colors duration-500" />
                   </div>
                 </ImageReveal>
