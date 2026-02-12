@@ -19,23 +19,23 @@ const workCategories = [
     title: 'BLAQ PAGES / AFRO HOUSE DJ SET / LOS ANGELES',
     images: [
       { src: '/images/blaq-pages-1.jpg', alt: 'DJ Performance' },
-      { src: '/images/blaq-pages-2.jpg', alt: 'Crowd Moment' },
-      { src: '/images/blaq-pages-3.jpg', alt: 'Event Atmosphere' },
+      { src: '/images/gallery-portrait-1.jpg', alt: 'Crowd Moment' },
+      { src: '/images/gallery-portrait-2.jpg', alt: 'Event Atmosphere' },
     ],
   },
   {
     title: 'EVENTS / NIGHTLIFE IN DC',
     images: [
       { src: '/images/dc-events-1.jpg', alt: 'Live Band' },
-      { src: '/images/dc-events-2.jpg', alt: 'Dance Floor' },
-      { src: '/images/dc-events-3.jpg', alt: 'Rooftop Session' },
+      { src: '/images/gallery-landscape-1.jpg', alt: 'Dance Floor' },
+      { src: '/images/gallery-small-1.jpg', alt: 'Rooftop Session' },
     ],
   },
   {
     title: 'YOGA BY JULES / YOGA AND BRUNCH / WASHINGTON DC',
     images: [
       { src: '/images/blaq-pages-1.jpg', alt: 'Yoga Session' },
-      { src: '/images/dc-events-1.jpg', alt: 'Brunch Event' },
+      { src: '/images/hero-main.jpg', alt: 'Brunch Event' },
       { src: '/images/creator-portrait.jpg', alt: 'Wellness Gathering' },
     ],
   },

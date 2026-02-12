@@ -56,7 +56,7 @@ export default function Home() {
                   src="/images/hero-main.jpg"
                   alt="Suzzy Ndiforchu"
                   fill
-                  className="object-cover"
+                  className="object-cover object-[60%_30%]"
                   priority
                 />
 
@@ -179,8 +179,8 @@ export default function Home() {
           <StaggerContainer staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
               { src: '/images/blaq-pages-1.jpg', alt: 'DJ Set Performance' },
-              { src: '/images/blaq-pages-2.jpg', alt: 'Crowd Energy' },
-              { src: '/images/blaq-pages-3.jpg', alt: 'Event Atmosphere' },
+              { src: '/images/gallery-portrait-1.jpg', alt: 'Crowd Energy' },
+              { src: '/images/gallery-portrait-2.jpg', alt: 'Event Atmosphere' },
             ].map((image, i) => (
               <StaggerItem key={i}>
                 <ImageReveal direction="up" delay={i * 0.1}>
@@ -210,9 +210,9 @@ export default function Home() {
 
           <StaggerContainer staggerDelay={0.15} className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {[
-              { src: '/images/dc-events-1.jpg', alt: 'Live Music' },
-              { src: '/images/dc-events-2.jpg', alt: 'Event Coverage' },
-              { src: '/images/dc-events-3.jpg', alt: 'Rooftop Event' },
+              { src: '/images/hero-main.jpg', alt: 'Live Music' },
+              { src: '/images/gallery-small-1.jpg', alt: 'Event Coverage' },
+              { src: '/images/creator-portrait.jpg', alt: 'Rooftop Event' },
             ].map((image, i) => (
               <StaggerItem key={i}>
                 <ImageReveal direction="up" delay={i * 0.1}>
